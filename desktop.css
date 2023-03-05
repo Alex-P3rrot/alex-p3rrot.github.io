@@ -1,0 +1,23 @@
+@media (min-width: 1200px) {
+
+    body {
+        width: 50vw!important;
+    }
+
+    aside {
+        width: 200px!important;
+    }
+
+    header {
+        margin-left: 6rem!important;
+    }
+
+    section {
+        margin-left: 200px!important;
+    }
+
+    .progressBar {
+        width: 150px!important;
+    }
+    
+}

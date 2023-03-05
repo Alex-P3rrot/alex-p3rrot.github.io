@@ -1,0 +1,10 @@
+@media (max-width: 600px) {
+
+    #basics {
+        margin-left: .5rem !important;
+    }
+
+    #works ul {
+        padding: 0;
+    }
+}

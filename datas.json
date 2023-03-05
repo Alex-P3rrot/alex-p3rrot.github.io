@@ -1,0 +1,57 @@
+{
+  "basics": {
+    "name": "Alex Perrot",
+    "email": "perrot.alex.dev@gmail.com",
+    "tel": "06.65.37.35.82",
+    "address": "34730 Prades-le-lez"
+  },
+  "skills": [
+    {
+      "name": "PHP/Symfony",
+      "level": "9"
+    },
+    {
+      "name": "JavaScript",
+      "level": "8"
+    },
+    {
+      "name": "Mysql/Doctrine",
+      "level": "8"
+    },
+    {
+      "name": "Vue.js",
+      "level": "8"
+    },
+    {
+      "name": "ApiPlatform",
+      "level": "6"
+    }
+  ],
+  "profile": "Au début de l'année 2019 j'ai décidé de me former à la programmation web avec l'objectif d'être embauché en tant que développeur avant 2022.<br> J'ai obtenu un premier contrat de travail le 15 aout 2021 dans une entreprise qui propose une application de gestion pour les experts comptable mais aussi la conception d'application métier de différents secteurs d'activité.<br> Mes premières missions ont été de maintenir et apporter des evolutions de ces applications métier, j'étais en relation avec les clients via un système de tickets ou directement par téléphone.<br> Par la suite j'ai eu l'occasion de concevoir entièrement une application depuis le cahier des charges jusqu'à la livraison et enfin j'ai également travaillé sur la maintenance de l'application principale dédiée aux experts comptable.",
+  "courses": ["Bac Economique et Social obtenu en 2013", "Autodidacte"],
+  "works": [
+    {
+      "name": "Développeur web",
+      "years": "2021/2023",
+      "missions": ["Maintenance et évolution des applications metier", "Conception d'application metier", "Gestion de base de données"],
+      "company": "Ingeneo"
+    },
+    {
+      "name": "Cordiste",
+      "years": "2018/2019",
+      "missions": ["Travaux en hauteurs"],
+      "company": "Botier"
+    },
+    {
+      "name": "Technicien de centrale à béton",
+      "years": "2016/2018",
+      "missions": ["Entretient de la centrale", "Gestion des ressources", "Gestion des livraisons et du calendrier de commandes", "Conseil client"],
+      "company": "Cemex"
+    },
+    {
+      "name": "Jardinier/Paysagiste",
+      "years": "2014/2015",
+      "missions": ["Entretient et aménagement de jardins"]
+    }
+  ]
+}
