@@ -161,37 +161,17 @@
 <section>
     <div id="profil">
         <h3 class="titleSection">Profil</h3>
-<!--        <?= $datas->profile ?>-->
+        <p></p>
     </div>
     <div id="works">
         <h3 class="titleSection">Expériences professionnels</h3>
         <ul>
-<!--            <?php-->
-<!--            foreach ($datas->works as $work) {-->
-<!--            $string = "-->
-<!--            <li>";-->
-<!--                if ($work->name !== null) $string .= "<strong>{$work->name}</strong>";-->
-<!--                if ($work->years !== null) $string .= "<br>- {$work->years}";-->
-<!--                if ($work->company !== null) $string .= "<br>- {$work->company}";-->
-<!--                $string .= '<br>';-->
-<!--                foreach ($work->missions as $mission) {-->
-<!--                $string .= "{$mission}<br>";-->
-<!--                }-->
-<!--                $string .= "-->
-<!--            </li>-->
-<!--            ";-->
-<!--            echo($string);-->
-<!--            }-->
-<!--            ?>-->
+
         </ul>
     </div>
     <div id="courses">
         <h3 class="titleSection">Formations</h3>
-<!--        <?php-->
-<!--            foreach ($datas->courses as $course) {-->
-<!--        echo("{$course}<br>");-->
-<!--        }-->
-<!--        ?>-->
+        <div></div>
     </div>
 </section>
 <script>
@@ -226,14 +206,29 @@
         })
         document.querySelector('#basics').innerHTML = basics
 
-        // let skills = ""
-        // datas.skills.forEach(skill => {z
-        //     skills += "{$skill->name} : <br> \
-        //         <div class='progressBar'> \
-        //         <div data-width='{$skill->level}'></div> \
-        //         </div><br>"
-        // })
-        // document.querySelector('#skills').innerHTML = skills
+        let skills = ""
+        datas.skills.forEach(skill => {
+            skills += `${skill.name} : <br> \
+                <div class='progressBar'> \
+                <div data-width=${skill.level}'></div> \
+                </div><br>`
+        })
+        document.querySelector('#skills').innerHTML = skills
+
+        document.querySelector("#profil p").innerHTML = datas.profile
+
+        let works = []
+        datas.works.forEach(work => {
+            let string = "<li>"
+            Object.entries(work).forEach(value => {
+                string += value[1] + "<br>"
+            })
+            string += "</li>"
+            works.push(string)
+        })
+        document.querySelector('#works ul').innerHTML = works.join('')
+
+        document.querySelector('#courses div').innerHTML = datas.courses.join('<br>')
 
         document.querySelector('#skills').setAttribute('data-initial-width', window.innerWidth.toString())
         progressBarSizes(window.innerWidth)
