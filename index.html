@@ -222,7 +222,7 @@
             let string = "<li>"
             Object.entries(work).forEach(value => {
                 if (value[0] === "missions") {
-                    string += value[1].join('<br>')
+                    string += value[1].join('<br>') + '<br>'
                 } else {
                     string += value[1] + "<br>"
                 }
