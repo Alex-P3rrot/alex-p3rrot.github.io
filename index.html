@@ -166,7 +166,6 @@
     <div id="works">
         <h3 class="titleSection">Expériences professionnels</h3>
         <ul>
-
         </ul>
     </div>
     <div id="courses">
@@ -199,7 +198,7 @@
         let basics = ""
         Object.entries(datas.basics).forEach(value => {
             if (value[0] === "name") {
-                basics += `<h1>${value[0]}</h1>`
+                basics += `<h1>${value[1]}</h1>`
             } else {
                 basics += `<img src='./assets/${value[0]}.ico'/> ${value[1]}<br>`
             }
