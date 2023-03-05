@@ -221,7 +221,11 @@
         datas.works.forEach(work => {
             let string = "<li>"
             Object.entries(work).forEach(value => {
-                string += value[1] + "<br>"
+                if (value[0] === "missions") {
+                    string += value[1].join('<br>')
+                } else {
+                    string += value[1] + "<br>"
+                }
             })
             string += "</li>"
             works.push(string)
